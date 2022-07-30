@@ -3,7 +3,7 @@
   "author": "stagas",
   "short": "stagas/foreach-dir",
   "description": "Run a command inside each directory serially.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
