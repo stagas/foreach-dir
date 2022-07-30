@@ -5,20 +5,15 @@ import * as os from 'os'
 import * as path from 'path'
 
 export class Options {
-  @arg('[dirs]', 'Dirs to run command in')
-  dirs: string[] = []
+  @arg('[dirs]', 'Dirs to run command in') dirs: string[] = []
 
-  @arg('--', '[command with args]', 'Command to execute')
-  command: string[] = []
+  @arg('--', '[command with args]', 'Command to execute') command: string[] = []
 
-  @arg('-c', '--concurrency', 'Maximum concurrent tasks.')
-  concurrency: number = os.cpus().length * 3
+  @arg('-c', '--concurrency', 'Maximum concurrent tasks.') concurrency: number = os.cpus().length * 3
 
-  @arg('-n', '--newer', 'Newer after certain date.')
-  newer = ''
+  @arg('-n', '--newer', 'Newer after certain date.') newer = ''
 
-  @arg('--dry-run', 'Dry run.')
-  dryRun = false
+  @arg('--dry-run', 'Dry run.') dryRun = false
 
   constructor(options: Partial<Options> = {}) {
     Object.assign(this, options)
